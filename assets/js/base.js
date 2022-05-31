@@ -15,7 +15,7 @@ $.ajaxPrefilter((option) => {
   // 控制用户的访问权限
   // 请求之后进行校验 token
   option.complete = (res) => {
-    console.log(res);
+    // console.log(res);
     // 在 complete 回调函数中，可以使用 res.responseJSON 拿到服务器响应回来的数据
     if (
       res.responseJSON.status === 1 &&
