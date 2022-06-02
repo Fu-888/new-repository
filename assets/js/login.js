@@ -4,13 +4,14 @@ $(function () {
     $('.login-box').hide();
     $('.reg-box').show();
   });
+
   // 点击去登录,让注册框隐藏，登录框显示
   $('#link_login').click(() => {
     $('.reg-box').hide();
     $('.login-box').show();
   });
 
-  //  从 LayUI 中获取
+  //  从 Layui 中获取
   const form = layui.form;
   const layer = layui.layer;
 
@@ -65,4 +66,5 @@ $(function () {
           }
       })
   });
+  
 });

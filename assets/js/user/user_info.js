@@ -6,6 +6,7 @@ $(function () {
       if (val.length > 6) return alert('昵称长度必须在 1 ~ 6 个字符之间！');
     },
   });
+
   // 初始化用户信息
   const getUserInfo = () => {
     $.ajax({
@@ -24,6 +25,7 @@ $(function () {
   // 重置表单数据
   $('#btnSeset').click((e) => {
     e.preventDefault();
+    // 重置初始化用户信息
     getUserInfo();
   });
 
@@ -42,4 +44,5 @@ $(function () {
       },
     });
   });
+  
 });
